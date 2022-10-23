@@ -1,16 +1,18 @@
 import { useState } from 'react'
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Header, Main } from './components'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [post, setPost] = useState(null);
 
   return (
+    <Router>
       <div className="App">
         <Header />
-        <Main />   
+        <Main />        
       </div>
+    </Router>
   )
 }
 
