@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const userLoggedIn = false
@@ -15,10 +15,10 @@ const Header = () => {
           ) : (
             <ul className="header-list new-session">
               <li className="header-item login">
-                <a href="/login">Log in</a>
+                <Link to="/login">Log in</Link>
               </li>
               <li className="header-item signup">
-                <a href="/signup">Sign up</a>
+                <Link to="/signup">Sign up</Link>
               </li>
             </ul>
           )}
